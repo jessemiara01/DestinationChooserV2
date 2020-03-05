@@ -10,7 +10,55 @@ import SwiftUI
 
 struct ShowAllOptionsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack (spacing: 100) {
+                Spacer()
+                    .frame(height: 0)
+                Text("DestinationChooser")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.blue)
+                VStack () {
+                    Text(NSLocalizedString("Add New Place", comment: "Add New Place title"))
+                    .background(Color.blue)
+                    .foregroundColor(Color.white)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 90)
+                    Rectangle()
+                        .fill(Color.white)
+                        .frame(height: 5)
+
+                    Text(NSLocalizedString("Show All Places", comment: "Show all places title"))
+                    .background(Color.blue)
+                    .foregroundColor(Color.white)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 90)
+                    Rectangle()
+                        .fill(Color.white)
+                        .frame(height: 5)
+
+                    Text(NSLocalizedString("Pick A Random Place", comment: "Pick a random place title"))
+                    .background(Color.blue)
+                    .foregroundColor(Color.white)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 90)
+                    }
+                    .background(Color.blue)
+                
+                VStack {
+                    Text(NSLocalizedString("Log Out", comment: "Logout Title"))
+                    .background(Color.orange)
+                    .foregroundColor(Color.white)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 90)
+                }
+                .background(Color.orange)
+                .foregroundColor(Color.white)
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 90)
+                
+                    Spacer()
+                
+                
+            }
+            .background(Color.gray)
+            .edgesIgnoringSafeArea(.all)
+        }
     }
 }
 

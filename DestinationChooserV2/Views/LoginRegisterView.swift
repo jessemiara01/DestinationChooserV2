@@ -10,43 +10,45 @@ import SwiftUI
 
 struct LoginRegisterView: View {
 
-    var actionText: String
+    var choice: Action
     @State private var username: String = ""
     @State private var password: String = ""
 
-    
     var body: some View {
-            VStack(alignment: .center, spacing: 20) {
-                Text(actionText)
-                    .font(.system(size: 40))
-                    .fontWeight(.semibold)
-                    .foregroundColor(.blue)
+        ZStack{
+            Color.dcCharcoal
+                .edgesIgnoringSafeArea(.all)
+            VStack() {
+                TitleText(text: choice.actionText)
+                Divider()
                 TextField("Username", text: $username)
-                    .background(Color.white)
-                    .font(.system(size: 30))
+                    .frame(height: 50)
+                    .background(Color.dcWhite)
+                    .font(.system(size: 25))
+                    .foregroundColor(.dcGray)
                     .multilineTextAlignment(.center)
-                
+                    .padding(.all)
                 TextField("Password", text: $password)
-                    .background(Color.white)
-                    .font(.system(size: 30))
+                    .frame(height: 50)
+                    .background(Color.dcWhite)
+                    .font(.system(size: 25))
+                    .foregroundColor(.dcGray)
                     .multilineTextAlignment(.center)
+                    .padding(.all)
                 Spacer()
                 NavigationLink(destination: ShowAllOptionsView()) {
-                    Text(actionText)
-                }
-                .font(.system(size:30))
-                .foregroundColor(.white)
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 90)
-                .background(Color.blue)
+                    ActionButton(choice: choice)
+                    }
+                Divider()
             }
-            .padding(EdgeInsets(top: 150, leading: 0, bottom: 50, trailing: 0))
-            .background(Color.gray)
-            .edgesIgnoringSafeArea(.all)
         }
+    }
 }
 
 struct LoginRegisterPreview: PreviewProvider {
     static var previews: some View {
-        LoginRegisterView(actionText: "Preview")
+        LoginRegisterView(choice: .login)
     }
 }
+
+

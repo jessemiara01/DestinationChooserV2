@@ -39,8 +39,11 @@ struct ActionButton: View {
             .foregroundColor(.dcBlue)
             .frame(height: 60)
             .overlay(Text(choice.actionText)
-                .foregroundColor(.dcWhite))
+                .foregroundColor(.dcGray))
             .padding(.horizontal)
+            .overlay(RoundedRectangle(cornerRadius: 50)
+                .stroke(Color.dcWhite, lineWidth: 2)
+                .padding(.horizontal))
     }
 }
 

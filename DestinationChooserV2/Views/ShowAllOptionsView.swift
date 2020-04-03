@@ -34,7 +34,7 @@ struct ShowAllOptionsView: View {
                     ActionButton(choice: .login)
                 }
                 Divider()
-                }.navigationBarTitle("").navigationBarHidden(true)
+                }
         }
     }
 }

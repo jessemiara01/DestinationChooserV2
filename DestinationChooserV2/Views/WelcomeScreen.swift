@@ -13,19 +13,17 @@ import SwiftUI
 struct WelcomeScreen: View {
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color.dcCharcoal
-                .edgesIgnoringSafeArea(.all)
-                VStack () {
-                    TitleText(text: "Welcome to DestinationChooser!")
-                    Spacer()
-                    NavigationLink(destination: LoginRegisterView(choice: .login)) {
-                        ActionButton(choice: .login)
-                    }
-                    NavigationLink(destination: LoginRegisterView(choice: .register)) {
-                        ActionButton(choice: .register)
-                    }
+        ZStack {
+            Color.dcCharcoal
+            .edgesIgnoringSafeArea(.all)
+            VStack () {
+                TitleText(text: "Welcome to DestinationChooser!")
+                Spacer()
+                NavigationLink(destination: LoginRegisterView(choice: .login)) {
+                    ActionButton(choice: .login)
+                }
+                NavigationLink(destination: LoginRegisterView(choice: .register)) {
+                    ActionButton(choice: .register)
                 }
             }
         }

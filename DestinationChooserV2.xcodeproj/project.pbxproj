@@ -17,6 +17,9 @@
 		8386592E2436A6EA0031FFF9 /* Teko-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 838659292436A6EA0031FFF9 /* Teko-Light.ttf */; };
 		8386592F2436A6EA0031FFF9 /* Teko-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8386592A2436A6EA0031FFF9 /* Teko-Regular.ttf */; };
 		838659302436A6EA0031FFF9 /* Teko-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8386592B2436A6EA0031FFF9 /* Teko-Medium.ttf */; };
+		83B0A73A270907BD0049469B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0A739270907BD0049469B /* MainView.swift */; };
+		83B0A73C270908E50049469B /* ShowDestinationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0A73B270908E50049469B /* ShowDestinationsView.swift */; };
+		83B0A73E270913ED0049469B /* AddLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0A73D270913ED0049469B /* AddLocationView.swift */; };
 		83EEB197238F26CB00A9C785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EEB196238F26CB00A9C785 /* AppDelegate.swift */; };
 		83EEB199238F26CB00A9C785 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EEB198238F26CB00A9C785 /* SceneDelegate.swift */; };
 		83EEB19B238F26CB00A9C785 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EEB19A238F26CB00A9C785 /* WelcomeScreen.swift */; };
@@ -37,6 +40,9 @@
 		838659292436A6EA0031FFF9 /* Teko-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Light.ttf"; sourceTree = "<group>"; };
 		8386592A2436A6EA0031FFF9 /* Teko-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Regular.ttf"; sourceTree = "<group>"; };
 		8386592B2436A6EA0031FFF9 /* Teko-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Medium.ttf"; sourceTree = "<group>"; };
+		83B0A739270907BD0049469B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		83B0A73B270908E50049469B /* ShowDestinationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDestinationsView.swift; sourceTree = "<group>"; };
+		83B0A73D270913ED0049469B /* AddLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationView.swift; sourceTree = "<group>"; };
 		83EEB193238F26CB00A9C785 /* DestinationChooserV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DestinationChooserV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EEB196238F26CB00A9C785 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83EEB198238F26CB00A9C785 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +142,9 @@
 				8386590F243688120031FFF9 /* ActionButton.swift */,
 				838659132436A1DE0031FFF9 /* TitleText.swift */,
 				832F0A7D2437003E00503300 /* RootView.swift */,
+				83B0A739270907BD0049469B /* MainView.swift */,
+				83B0A73B270908E50049469B /* ShowDestinationsView.swift */,
+				83B0A73D270913ED0049469B /* AddLocationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,14 +226,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				83EEB197238F26CB00A9C785 /* AppDelegate.swift in Sources */,
+				83B0A73E270913ED0049469B /* AddLocationView.swift in Sources */,
 				838659142436A1DE0031FFF9 /* TitleText.swift in Sources */,
 				83865910243688120031FFF9 /* ActionButton.swift in Sources */,
+				83B0A73A270907BD0049469B /* MainView.swift in Sources */,
 				83EEB199238F26CB00A9C785 /* SceneDelegate.swift in Sources */,
 				83EEB19B238F26CB00A9C785 /* WelcomeScreen.swift in Sources */,
 				832F0A7E2437003E00503300 /* RootView.swift in Sources */,
 				83EEB1AC238F26F600A9C785 /* LoginRegisterView.swift in Sources */,
 				83699C202390435700822C0A /* ShowAllOptionsView.swift in Sources */,
 				8386591224368DA70031FFF9 /* ColorExtension.swift in Sources */,
+				83B0A73C270908E50049469B /* ShowDestinationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

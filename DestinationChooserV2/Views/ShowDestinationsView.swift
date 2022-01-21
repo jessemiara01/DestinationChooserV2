@@ -10,6 +10,9 @@ import SwiftUI
 
 @available(iOS 14.0, *)
 struct ShowDestinationsView: View {
+    @State private var showLoginView = true
+    @State private var showAddView = false
+
     init(){
         UITableView.appearance().backgroundColor = UIColor(Color.dcGray)
         UITableView.appearance().tableFooterView = UIView()
@@ -18,7 +21,6 @@ struct ShowDestinationsView: View {
             .foregroundColor : UIColor(Color.dcWhite)]
     }
 
-    @State private var showAddView = false
     var body: some View {
         NavigationView {
             List {
@@ -45,10 +47,16 @@ struct ShowDestinationsView: View {
             .sheet(isPresented: $showAddView, content: {
                 AddLocationView()
             })
+            
+            .fullScreenCover(isPresented: $showLoginView,
+                   onDismiss: {}, content: {
+                LoginRegisterView(choice: .login)
+            })
         }
     }
     
 }
+
 
 @available(iOS 14.0, *)
 struct ShowDestinationsView_Previews: PreviewProvider {

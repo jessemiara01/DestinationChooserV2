@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '15.0'
 
 target 'DestinationChooserV2' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -7,5 +7,5 @@ target 'DestinationChooserV2' do
 
   # Pods for DestinationChooserV2
 pod 'Firebase/Auth'
-
+pod 'Firebase/Firestore'
 end

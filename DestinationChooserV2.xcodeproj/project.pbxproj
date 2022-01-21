@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		833DD2A027095386006EBD11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 833DD29F27095386006EBD11 /* GoogleService-Info.plist */; };
-		83699C202390435700822C0A /* ShowAllOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83699C1F2390435700822C0A /* ShowAllOptionsView.swift */; };
 		83865910243688120031FFF9 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386590F243688120031FFF9 /* ActionButton.swift */; };
 		8386591224368DA70031FFF9 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386591124368DA70031FFF9 /* ColorExtension.swift */; };
 		838659142436A1DE0031FFF9 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838659132436A1DE0031FFF9 /* TitleText.swift */; };
@@ -22,7 +21,6 @@
 		83B0A73E270913ED0049469B /* AddLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0A73D270913ED0049469B /* AddLocationView.swift */; };
 		83EEB197238F26CB00A9C785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EEB196238F26CB00A9C785 /* AppDelegate.swift */; };
 		83EEB199238F26CB00A9C785 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EEB198238F26CB00A9C785 /* SceneDelegate.swift */; };
-		83EEB19B238F26CB00A9C785 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EEB19A238F26CB00A9C785 /* WelcomeScreen.swift */; };
 		83EEB19D238F26CC00A9C785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EEB19C238F26CC00A9C785 /* Assets.xcassets */; };
 		83EEB1A0238F26CC00A9C785 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EEB19F238F26CC00A9C785 /* Preview Assets.xcassets */; };
 		83EEB1A3238F26CC00A9C785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EEB1A1238F26CC00A9C785 /* LaunchScreen.storyboard */; };
@@ -33,7 +31,6 @@
 /* Begin PBXFileReference section */
 		45EFF1435A12B9B4F4A5E477 /* Pods-DestinationChooserV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DestinationChooserV2.debug.xcconfig"; path = "Target Support Files/Pods-DestinationChooserV2/Pods-DestinationChooserV2.debug.xcconfig"; sourceTree = "<group>"; };
 		833DD29F27095386006EBD11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		83699C1F2390435700822C0A /* ShowAllOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllOptionsView.swift; sourceTree = "<group>"; };
 		8386590F243688120031FFF9 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		8386591124368DA70031FFF9 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		838659132436A1DE0031FFF9 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
@@ -48,7 +45,6 @@
 		83EEB193238F26CB00A9C785 /* DestinationChooserV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DestinationChooserV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EEB196238F26CB00A9C785 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83EEB198238F26CB00A9C785 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83EEB19A238F26CB00A9C785 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		83EEB19C238F26CC00A9C785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83EEB19F238F26CC00A9C785 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83EEB1A2238F26CC00A9C785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -152,10 +148,8 @@
 		83EEB1AA238F26D600A9C785 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				83EEB19A238F26CB00A9C785 /* WelcomeScreen.swift */,
 				83EEB1AB238F26F600A9C785 /* LoginRegisterView.swift */,
 				83EEB1A1238F26CC00A9C785 /* LaunchScreen.storyboard */,
-				83699C1F2390435700822C0A /* ShowAllOptionsView.swift */,
 				8386590F243688120031FFF9 /* ActionButton.swift */,
 				838659132436A1DE0031FFF9 /* TitleText.swift */,
 				83B0A739270907BD0049469B /* MainView.swift */,
@@ -202,7 +196,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = "Jesse Miara";
 				TargetAttributes = {
 					83EEB192238F26CB00A9C785 = {
@@ -300,9 +294,7 @@
 				83865910243688120031FFF9 /* ActionButton.swift in Sources */,
 				83B0A73A270907BD0049469B /* MainView.swift in Sources */,
 				83EEB199238F26CB00A9C785 /* SceneDelegate.swift in Sources */,
-				83EEB19B238F26CB00A9C785 /* WelcomeScreen.swift in Sources */,
 				83EEB1AC238F26F600A9C785 /* LoginRegisterView.swift in Sources */,
-				83699C202390435700822C0A /* ShowAllOptionsView.swift in Sources */,
 				8386591224368DA70031FFF9 /* ColorExtension.swift in Sources */,
 				83B0A73C270908E50049469B /* ShowDestinationsView.swift in Sources */,
 			);
@@ -348,6 +340,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -372,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -408,6 +401,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -426,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

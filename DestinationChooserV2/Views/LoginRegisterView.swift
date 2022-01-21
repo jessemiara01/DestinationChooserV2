@@ -7,12 +7,16 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginRegisterView: View {
 
     var choice: Action
     @State private var username: String = ""
     @State private var password: String = ""
+    @State private var showBadAuthAlert: Bool = false
+    @State private var errorMessage: String = ""
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         ZStack{
@@ -28,7 +32,7 @@ struct LoginRegisterView: View {
                     .foregroundColor(.dcGray)
                     .multilineTextAlignment(.center)
                     .padding(.all)
-                TextField("Password", text: $password)
+                SecureField("Password", text: $password)
                     .frame(height: 50)
                     .background(Color.dcWhite)
                     .font(.system(size: 25))
@@ -36,10 +40,38 @@ struct LoginRegisterView: View {
                     .multilineTextAlignment(.center)
                     .padding(.all)
                 Spacer()
-                NavigationLink(destination: ShowAllOptionsView()) {
+                Button(action: {
+                    handleLogin()
+                }, label: {
                     ActionButton(choice: choice)
-                    }
+                })
                 Divider()
+            }
+        }
+        .alert(isPresented: $showBadAuthAlert, content: {
+            Alert(title: Text("Login Failed"), message: Text(errorMessage))
+        })
+    }
+    
+    private func handleLogin() {
+        switch choice {
+        case .login:
+            Auth.auth().signIn(withEmail: username, password: password) { result , error in
+                if let error = error {
+                    showBadAuthAlert.toggle()
+                    errorMessage = error.localizedDescription
+                } else {
+                    presentationMode.wrappedValue.dismiss()
+                }
+            }
+        case .register:
+            Auth.auth().createUser(withEmail: username, password: password) { result, error in
+                if let error = error {
+                    showBadAuthAlert.toggle()
+                    errorMessage = error.localizedDescription
+                } else {
+                    presentationMode.wrappedValue.dismiss()
+                }
             }
         }
     }

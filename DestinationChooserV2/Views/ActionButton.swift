@@ -11,9 +11,9 @@ import SwiftUI
 enum Action {
     case login
     case register
-    case addNew
-    case showAll
-    case random
+//    case addNew
+//    case showAll
+//    case random
     
     var actionText: String {
         switch self {
@@ -21,12 +21,12 @@ enum Action {
             return NSLocalizedString("Log In", comment: "Login String")
         case .register:
             return NSLocalizedString("Register", comment: "Register String")
-        case .addNew:
-                return NSLocalizedString("Add a New Place", comment: "Add New String")
-        case .showAll:
-                return NSLocalizedString("Show All Places", comment: "Show All String")
-        case .random:
-                return NSLocalizedString("Pick a Random Place", comment: "Random String")
+//        case .addNew:
+//                return NSLocalizedString("Add a New Place", comment: "Add New String")
+//        case .showAll:
+//                return NSLocalizedString("Show All Places", comment: "Show All String")
+//        case .random:
+//                return NSLocalizedString("Pick a Random Place", comment: "Random String")
         }
     }
 

@@ -16,7 +16,7 @@ struct MainView: View {
                 .tabItem {
                     Label("All Destinations", systemImage: "square.grid.2x2.fill")
                 }
-            WelcomeScreen()
+            ShowDestinationsView()
                 .tabItem {
                     Label("Random Destination", systemImage: "shuffle")
                 }
